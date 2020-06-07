@@ -1,0 +1,7 @@
+table{
+    border: ;
+    empty-cells: hide;
+}
+th,td{
+    border: 1px solid;
+}
