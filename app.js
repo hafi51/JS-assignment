@@ -229,3 +229,62 @@ if(operator == "+"){
 }else{
     alert("Result: " + (firstParameter % secondParamert))
 }
+                            // IF…ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITION
+var chara = parseInt(prompt("Enter number or chatachter"));
+if(chara >= 0 || chara <= 9){
+    alert("Entered value is a number");
+}else if(chara >= 65 || chara <= 90){
+    alert("Entered value is uppercase letter");
+}else if(chara >= 97 || chara <= 122){
+    alert("Entered value is lowercase letter");
+}else{
+    alert("Enter correct value");
+}
+var first = parseInt(prompt("Enter first value"));
+var second = parseInt(prompt("Enter second value"));
+if(first > second){
+    alert("first is greater");
+}else if(first < second){
+    alert("second is greater");
+}else if(first == second){
+    alert("both are equal");
+}
+var num = parseInt(prompt("Enter number: "));
+if(num > 0){
+    alert("number is positive");
+}else if(num < 0){
+    alert("number is negative");
+}else{
+    alert("number is zero");
+}
+// task password
+var pass = "hello";
+var enteres = prompt("Enter Password");
+if(enteres == ""){
+    alert("enter your password")
+}else if(enteres == pass){
+    alert("Correct!")
+}else{
+    alert("Incorrect password")
+}
+// task 6 fixed
+var greeting;
+var hour = 13;
+if (hour < 18) {
+greeting = "Good day";
+}else{
+greeting = "Good evening";
+}
+// task flowchart
+var inputTime = parseInt(prompt("Enter time in 24hrs format: "));
+if(inputTime >= 0000 && inputTime < 1200){
+    alert("Good Morning!")
+}else if(inputTime >= 1200 && inputTime < 1700){
+    alert("Good Afternoon!")
+}else if(inputTime >= 1700 && inputTime < 2100){
+    alert("Good evening!")
+}else if(inputTime >= 2100 && inputTime < 2359){
+    alert("Good Night!")
+}else {
+    alert("Input correct Time")
+}
