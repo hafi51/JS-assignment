@@ -171,3 +171,61 @@ document.write(sub1 + " " +totalmarks  + " " + obMarks1+ " " +per1 +  "% <br>");
 document.write(sub2 + " " +totalmarks  + " " + obMarks2+ " " +per2 +  "% <br>");
 document.write(sub3 + " " +totalmarks  + " " + obMarks3+ " " +per3 +  "% <br>");
 document.write( omarks +  " " + oobmarks + " " +totalper +  "% <br>");
+                                                // User Input & Conditional Statement
+var city = prompt("Enter city name: ");
+if(city == "Karachi"){
+    alert("Welcome to the sity of lights!");
+}else if(city == "Faisalabad"){
+    alert("Welcome to home of Cotton Industury!");
+}else if(city == "Lahore"){
+    alert("Welcome to the city of Lively!");
+}else{
+    alert("Enter correct value");
+}
+// task 2
+var gender = prompt("Enter ur gender: ");
+if(gender == "male"){
+    alert("good morning sir")
+}else if(gender == "female"){
+    alert("good morning maam")
+}else{
+    alert("Enter correct value: ")
+}
+// task 3
+var color = prompt("Enter road signal");
+if(color == "red"){
+    alert("Must stop")
+}else if(color == "yellow"){
+    alert("ready to move")
+}else{
+    alert("move now")
+}
+// task 4
+var fuel = prompt("Enter fuel in liters");
+if(fuel < .25){
+    alert("please refill fuel")
+}else{
+    alert("u are good to go")
+}
+// task 5
+// a) output: alert will be shown
+// b) won't run
+// c) condition 2,3 will run
+// d) cost is equal
+// e) True
+// f) alert will run
+var firstParameter, secondParamert, operator;
+firstParameter = parseInt(prompt("Enter first number: ", 5));
+secondParamert = parseInt(prompt("Enter sencond number: ", 5));
+operator = prompt("Enter operator: ", "%");
+if(operator == "+"){
+    alert("Result: " + (firstParameter + secondParamert))
+}else if(operator == "-"){
+    alert("Result: " + (firstParameter - secondParamert))
+}else if(operator == "*"){
+    alert("Result: " + (firstParameter * secondParamert))
+}else if(operator == "/"){
+    alert("Result: " + (firstParameter / secondParamert))
+}else{
+    alert("Result: " + (firstParameter % secondParamert))
+}
