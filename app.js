@@ -288,3 +288,49 @@ if(inputTime >= 0000 && inputTime < 1200){
 }else {
     alert("Input correct Time")
 }
+                                                // Arrays 
+var studentName = [""];
+var studentName = new Array;
+var string = ["ali", "muaz", "aiman"];
+var numb = [1,2,5,45];
+var bool = [true, false];
+var mix = ["ali", 25 , false];
+var qual = ["SSC", "HSC", "BCS","BS", "BCOM", "MS", "M. Phil", "PhD"];
+for(i = 0; i <= 7; i++){
+    document.write((i+1) + ")" + qual[i] + "<br>");
+}
+// task 8
+var studentNames = [];
+var score = [];
+var totalMarks = 500;
+for(i = 0;i<=2;i++){
+    studentNames[i] = prompt("Enter name of "+ (i+1) + " student");
+    score[i] = parseInt(prompt("Enter score of "+ (i+1) + " student"))
+}
+for(i = 0; i<= 2; i++){
+    document.write("Score of " + studentNames[i] + " is " + score[i] + ". Percentage is: " + (score[i]/totalMarks)*100 + "%<br>")
+}
+// task 9
+var colors = ["red", "blue","purple","yellow"];
+document.write("Colors before addition at start: " + colors + "<br>");
+colors.unshift(prompt("Add the color of your choice at start")) ;
+document.write("Colors after addition at start: " + colors + "<br>");
+colors.push(prompt("Add the color of your choice at end")) ;
+document.write("Colors after addition at end: " + colors + "<br>");
+colors.unshift("black","purple");
+document.write("Colors after adding two at start: " + colors + "<br>");
+colors.shift();
+document.write("Colors after del first at start: " + colors + "<br>");
+colors.pop();
+document.write("Colors after del first at end: " + colors + "<br>");
+document.write("Add colors to your choice of index: " + colors.splice(parseInt(prompt("Enter where you want to add")),0, prompt("Enter color of your choice")) + colors + "<br>");
+document.write("Colors after del of ur choice: " + colors.splice(parseInt(prompt("Enter index from where u want to del:")),parseInt(prompt("enter how many u want to del"))) + colors + "<br>")
+scores = [320,230,480,120];
+scores.sort();
+var cities = ["Karachi","Lahore","Faisalabad","islamabad","quetta"];
+var selectedCities = cities.slice(0,2);
+var arr = ["This", "is", "my", "cat"];
+var str = arr.join(" ");
+// task 15
+var phone = ["apple", "sony","samsung","motorola","nokia","huawei"];
+document.write("<select><option>" + phone[0] + "</option><option >" + phone[1] + "</option><option>" + phone[2] + "</option><option>" + phone[3] + "</option><option>" + phone[4] + "</option><option>" + phone[5] + "</option></select>")
