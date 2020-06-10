@@ -334,3 +334,62 @@ var str = arr.join(" ");
 // task 15
 var phone = ["apple", "sony","samsung","motorola","nokia","huawei"];
 document.write("<select><option>" + phone[0] + "</option><option >" + phone[1] + "</option><option>" + phone[2] + "</option><option>" + phone[3] + "</option><option>" + phone[4] + "</option><option>" + phone[5] + "</option></select>")
+                                                // ARRAYS AND LOOPS
+var arr = [[],[],[]];
+arr[0] = [2,3,4];
+arr[1] = ["a","b"];
+arr[2] = [true,false];
+var arrMulti = [[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+for(i=1;i<=10;i++){
+    document.write(i + "<br>")
+}
+var tnumber = parseInt(prompt("Enter table number", "2"))
+var tlength = parseInt(prompt("Enter table length", "10"))
+for(i = 1;i <= tlength;i++){
+    document.write(tnumber + " * " + i + " = " + tnumber*i + "<br>");
+}
+var fruits = ["apple", "banana", "mango", "orange","strawberry"]
+for(i=0;i<=4;i++){
+    document.write(fruits[i] + "<br>")
+}
+var counting = [];
+for(i=0;i<=14;i++){
+    counting[i] = i+1;
+}
+document.write(counting.reverse())
+for(i=0;i<=14;i++){
+    if(i%2 == 0 || i == 0){
+        document.write(i)
+    }
+}
+for(i=0;i<=14;i++){
+    if(i%2 == 1){
+        document.write(i)
+    }
+}
+var bakery = ["cake", "apple pie", "cookie", "chips", "patties", "sandwich"]
+var oderTake = prompt("Enter order");
+var found = bakery.indexOf(oderTake);
+if(found == -1){
+    document.write("We are sorry. " + oderTake + " is not available at our bakery.");
+}else{
+    document.write(oderTake + " is available at index " + found)
+}
+var numb = [24, 53, 78, 91, 12];
+var largest = 0;
+for(i=0; i<numb.length;i++){
+    if(numb[i] > largest){
+        largest = numb[i]
+    }   
+}
+document.write("Largest number is: " + largest);
+var smallest = numb[0];
+for(i=0;i<numb.length;i++){
+    if(numb[i]< smallest){
+        smallest = numb[i]
+    }
+}
+document.write("Smallest number is: " + smallest);
+for(i=1;i<=20;i++){
+    document.write(i*5 + " ")
+}
